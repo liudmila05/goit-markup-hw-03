@@ -17,9 +17,8 @@
 
 <body>
 
-    <header class="container header container-header-nav">
-
-        <div class="">
+    <header class="header">
+        <div class="container container-header-nav">
             <nav class="header-nav">
                 <a class="logo" href="./index.html">Web<span class="logo-black">Studio</span></a>
                 <ul class="menu list">
@@ -28,14 +27,11 @@
                     <li class="item"><a href="" class="link">Контакты</a></li>
                 </ul>
             </nav>
-        </div>
-        <div class="">          
             <ul class="contacts-header list">
                 <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
                 <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
             </ul>
         </div>
-        
     </header>
 
     <main>
@@ -48,8 +44,8 @@
             </section>
 
         <!--Особенности-->
-        <div class="container">
-            <section class="section">
+        <section class="section">
+            <div class="container">
                 <h2 class="features">Преимущества (скроется)</h2>
                 <ul class="list features-list">
                     <li class="item">
@@ -72,19 +68,23 @@
                         <p class="features-text">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                     </li>
                 </ul>
+            </div>
+        </section>
         <!-- Чем мы занимаемся -->
+        <section class="section services-section">
+            <div class="container">
                 <h2 class="services-title">Чем мы занимаемся</h2>
                 <ul class="list services-list">
                     <li class="item"><img src="./images/img1.jpg" alt="Разаработка сайта" width="370"></li>
                     <li class="item"><img src="./images/img2.jpg" alt="Адаптация под мобильный телефон" width="370"></li>
                     <li class="item"><img src="./images/img3.jpg" alt="Разработка дизайна" width="370"></li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
 
         <!-- Команда -->
-        <div class="team">
-            <section class="section container">
+        <section class="section team">
+            <div class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="list team-list-card">
                     <li class="team-list">
@@ -108,8 +108,8 @@
                         <p class="team-job">UI Designer</p>
                     </li>
                 </ul>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
     
     <footer class="footer">
@@ -120,8 +120,8 @@
                     <li>
                         <p class="footer-adress">г. Киев, пр-т Леси Украинки, 26</p>
                     </li>
-                    <li><a class="contacts-footer" href="mailto:info@example.com">info@example.com</a></li>
-                    <li><a class="contacts-footer tel-footer" href="tel:+380991111111">+38 099 111 11 11</a></li>
+                    <li class="contacts-list"><a class="contacts-footer" href="mailto:info@example.com">info@example.com</a></li>
+                    <li class="contacts-list"><a class="contacts-footer" href="tel:+380991111111">+38 099 111 11 11</a></li>
                 </ul>
             </address>
         </div>

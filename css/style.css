@@ -29,6 +29,12 @@ ul {
     margin: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -61,7 +67,6 @@ ul {
 .container-header-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 .logo {
@@ -123,6 +128,7 @@ ul {
 /* contacts */
 .contacts-header {
     display: flex;
+    margin-left: auto;
 }
 
 .contacts-header .item {
@@ -156,6 +162,8 @@ ul {
 }
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
 }
 
@@ -240,6 +248,11 @@ ul {
 }
 
 /* services + team*/
+
+.services-section {
+    padding-top: 0;
+}
+
 .services-list {
     display: flex;
 }
@@ -250,10 +263,6 @@ ul {
 
 .services-list .item:nth-child(3n) {
     margin-right: 0;
-}
-
-.services-title {
-    margin-top: 94px;
 }
 
 .services-title,
@@ -314,10 +323,23 @@ ul {
 }
 
 /* footer */
+
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 .logo-footer {
     display: inline-block;
-    margin-top: 60px;
     margin-bottom: 20px;
+}
+
+.contacts-list {
+    margin-bottom: 9px;
+}
+
+.contacts-list:last-child {
+    margin-bottom: 0;
 }
 
 .footer > ul {
@@ -325,8 +347,8 @@ ul {
 }
 
 .footer-adress {
-    margin-bottom: 20px;
-    
+    margin-bottom: 9px;
+
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
@@ -351,9 +373,6 @@ ul {
     color: var(--accent-color);
 }
 
-.tel-footer {
-    margin-bottom: 60px;
-}
 /* portfolio */
 .portfolio-list-button {
     display: flex;
@@ -398,13 +417,16 @@ ul {
     flex-wrap: wrap;
 }
 
-.portfolio-picture {
-    margin-bottom: 20px;
+.portfolio-item {
+    padding: 20px 24px;
+
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .portfolio-name {
     margin-bottom: 4px;
-    margin-left: 24px;
 
     font-weight: 700;
     font-size: 18px;
@@ -412,10 +434,7 @@ ul {
     letter-spacing: 0.06em;
 }
 
-.portfolio-product {
-    margin-bottom: 20px;
-    margin-left: 24px;    
-    
+.portfolio-product {    
     font-size: 16px;
     line-height: 1.88;
     
@@ -429,7 +448,6 @@ ul {
     margin-bottom: 30px;
 
     background: var(--white-color);
-    border: 1px solid #EEEEEE;
 }
 
 .portfolio-card:nth-child(3n) {
